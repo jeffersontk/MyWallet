@@ -8,10 +8,23 @@ export const Content = styled.div`
   max-width: 1120px;
   margin: 0 auto;
 
-  padding: 2rem 1rem 10rem;
+  padding: 2rem 1rem 8rem;
   display: flex;
   align-items: center;
   justify-Content: space-between;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img{
+      transform: skewX(-5deg)
+    }
+    span{
+      font-size: 1.5rem;
+      color: #fff;
+    }
+  }
 
   button {
     font-size: 1rem;

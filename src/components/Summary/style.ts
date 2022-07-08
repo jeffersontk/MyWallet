@@ -4,13 +4,14 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: -10rem;
+  margin-top: -8rem;
 
   div{
     background: var(--shape);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     color: var(--text-title);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
     header {
       display: flex;
