@@ -1,8 +1,16 @@
-import logo from '../../assets/Logo.svg'
+import { useState } from 'react'
+import Modal from 'react-modal'
 import logoIcon from '../../assets/logoIcon.svg'
 import { Container, Content } from './styles'
 
-export function Header() {
+interface HeaderProps {
+  onOpenNewTransactionModal: () => void;
+}
+
+export function Header({
+  onOpenNewTransactionModal
+}: HeaderProps) {
+
   return (
     <Container>
       <Content>
@@ -11,7 +19,7 @@ export function Header() {
           <span>My Wallet</span>
         </div>
 
-        <button type="button">
+        <button type="button" onClick={onOpenNewTransactionModal}>
           Nova Transação
         </button>
       </Content>
